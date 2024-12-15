@@ -1,0 +1,37 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class SimpleForm4 extends JFrame
+{
+	JButton jbtnNorth;
+	JButton jbtnSouth;
+	JButton jbtnEast;
+	JButton jbtnWest;
+	
+	public SimpleForm4()
+	{
+		setSize(400, 100);
+		setTitle("BorderLayout Sample");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		setLayout(new BorderLayout());
+		setLayout(new BorderLayout(30, 10));
+		
+		jbtnNorth = new JButton("North");
+		jbtnSouth = new JButton("South");
+		jbtnEast = new JButton("East");
+		jbtnWest = new JButton("West");
+		
+		add(jbtnNorth,"North");
+		add(jbtnSouth,"South");
+		add(jbtnEast,"East");
+		add(jbtnWest,"West");
+		
+		setVisible(true);
+	}
+		
+		public static void main(String[] args)
+		{
+			SimpleForm4 frame = new SimpleForm4();
+		}
+}

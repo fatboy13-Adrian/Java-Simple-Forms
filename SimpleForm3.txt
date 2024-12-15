@@ -1,0 +1,46 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class SimpleForm3 extends JFrame
+{
+	JButton jbtnButton1;
+	JButton jbtnButton2;
+	JButton jbtnButton3;
+	JButton jbtnButton4;
+	JButton jbtnButton5;
+	JButton jbtnButton6;
+	
+	public SimpleForm3()
+	{
+		setSize(500, 100);
+		setTitle("FlowLayout Sample");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		setLayout(new FlowLayout (FlowLayout.CENTER));
+		setLayout(new FlowLayout (FlowLayout.LEFT));
+		setLayout(new FlowLayout (FlowLayout.RIGHT));
+		setLayout(new FlowLayout (FlowLayout.CENTER, 30, 10));
+
+		
+		jbtnButton1 = new JButton("button 1");
+		jbtnButton2 = new JButton("button 2");
+		jbtnButton3 = new JButton("button 3");
+		jbtnButton4 = new JButton("button 4");
+		jbtnButton5 = new JButton("button 5");
+		jbtnButton6 = new JButton("button 6");
+		
+		add(jbtnButton1);
+		add(jbtnButton2);
+		add(jbtnButton3);
+		add(jbtnButton4);
+		add(jbtnButton5);
+		add(jbtnButton6);
+		
+		setVisible(true);
+	}
+		
+		public static void main(String[] args)
+		{
+			SimpleForm3 frame = new SimpleForm3();
+		}
+}

@@ -1,0 +1,50 @@
+import javax.swing.*;
+
+import java.awt.*;
+
+public class SimpleForm5 extends JFrame
+{
+	JButton b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12;
+	
+	public SimpleForm5()
+	{
+		setSize(300, 200);
+		setTitle("GridLayout Sample");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setLayout(new GridLayout(4, 3, 20, 10));
+		
+		b1 = new JButton("1");
+		b2 = new JButton("2");
+		b3 = new JButton("3");
+		b4 = new JButton("4");
+		b5 = new JButton("5");
+		b6 = new JButton("6");
+		b7 = new JButton("7");
+		b8 = new JButton("8");
+		b9 = new JButton("9");
+		b10 = new JButton("*");
+		b11 = new JButton("0");
+		b12 = new JButton("#");
+		
+		add(b1);
+		add(b2);
+		add(b3);
+		add(b4);
+		add(b5);
+		add(b6);
+		add(b7);
+		add(b8);
+		add(b9);
+		add(b10);
+		add(b11);
+		add(b12);
+
+		setVisible(true);
+	}
+		
+		public static void main(String[] args)
+		{
+			SimpleForm5 frame = new SimpleForm5();
+		}
+}
+

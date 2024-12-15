@@ -1,0 +1,33 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class SimpleForm2 extends JFrame
+{
+	JLabel jlblEmail;
+	JTextField jtfInput;
+	JButton jbtnSubmit;
+	
+	public SimpleForm2()
+	{
+		setSize (500, 100);
+		setTitle("Registration Form");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		setLayout (new GridLayout(3, 1));
+		
+		jlblEmail = new JLabel("Email Address");
+		jtfInput = new JTextField(20);
+		jbtnSubmit = new JButton("Register");
+		
+		add(jlblEmail);
+		add(jtfInput);
+		add(jbtnSubmit);
+		
+		setVisible(true);
+	}
+	public static void main(String[] args)
+	{
+		SimpleForm2 frame = new SimpleForm2();
+	}
+}
+
